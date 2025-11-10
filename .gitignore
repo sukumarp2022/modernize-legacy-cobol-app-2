@@ -4,8 +4,5 @@
 # cobol accountsystem program
 accountsystem
 
-# node_modules
-node_modules/
-
-# node-accounting-app
-node-accounting-app/*
+# node_modules (this will be ignored in node-accounting-app directory via its own .gitignore)
+**/node_modules/
