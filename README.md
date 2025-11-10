@@ -8,6 +8,17 @@ and take a trust but verify approach.**
 
 <img src="images/cobol_to_nodejs.png" alt="Cobol to Node.js" width="800"/>
 
+## 📋 Spec-Kit Structure
+
+This repository follows the [GitHub Spec-Kit](https://github.com/github/spec-kit) framework for spec-driven development. All project specifications, plans, and tasks are documented in the `.specify/` directory:
+
+- **[Constitution](/.specify/memory/constitution.md)**: Project principles and architectural guidelines
+- **[Specification](/.specify/specs/spec.md)**: Comprehensive project requirements and user stories
+- **[Implementation Plan](/.specify/specs/plan.md)**: Technical approach and implementation phases
+- **[Task List](/.specify/specs/tasks.md)**: Detailed breakdown of all implementation tasks
+
+For more information about the spec-kit structure, see [.specify/README.md](.specify/README.md).
+
 ## Prerequisites
 
 - Basic understanding of programming concepts.
