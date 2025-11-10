@@ -19,6 +19,28 @@ This repository follows the [GitHub Spec-Kit](https://github.com/github/spec-kit
 
 For more information about the spec-kit structure, see [.specify/README.md](.specify/README.md).
 
+## 🚀 Quick Start: Node.js Implementation
+
+**The modernization is complete!** A fully functional Node.js implementation is available in the `node-accounting-app/` directory.
+
+### Running the Node.js Application
+
+```bash
+cd node-accounting-app
+npm install
+npm start
+```
+
+### Features
+- ✅ Complete functional equivalence with COBOL version
+- ✅ Interactive console menu interface
+- ✅ View balance, credit, and debit operations
+- ✅ Overdraft protection
+- ✅ Comprehensive test suite (13 tests passing)
+- ✅ Detailed code comments referencing COBOL equivalents
+
+For detailed documentation, see [node-accounting-app/README.md](node-accounting-app/README.md).
+
 ## Prerequisites
 
 - Basic understanding of programming concepts.
@@ -273,6 +295,47 @@ node main.js
 #file:TESTPLAN.md file The node.js code is in node-accounting-app folder and I am looking to generate tests
 for #file:operations.js file. Use a popular testing framework and also provide all the dependencies required to run the tests.
 ```
+
+## 📊 COBOL vs Node.js Comparison
+
+### Side-by-Side Architecture
+
+| Component | COBOL | Node.js |
+|-----------|-------|---------|
+| **Main Program** | main.cob (37 lines) | main.js (98 lines with comments) |
+| **Operations** | operations.cob (41 lines) | operations.js (159 lines with comments) |
+| **Data Layer** | data.cob (24 lines) | data.js (44 lines with comments) |
+| **Testing** | Manual testing | Automated tests with Jest (13 tests) |
+
+### Key Differences
+
+| Aspect | COBOL | Node.js |
+|--------|-------|---------|
+| **I/O Model** | Synchronous ACCEPT/DISPLAY | Async readline with Promises |
+| **Module System** | CALL with LINKAGE SECTION | require()/module.exports |
+| **Data Storage** | WORKING-STORAGE SECTION | Module-level variables |
+| **Control Flow** | PERFORM UNTIL, EVALUATE | while loops, switch statements |
+| **Testing** | Manual execution | Automated unit/integration tests |
+| **Dependencies** | COBOL compiler (GnuCOBOL) | Node.js runtime + Jest |
+
+### Functional Equivalence Checklist
+
+✅ **Menu System**: Identical menu options and display format  
+✅ **Initial Balance**: Both start with $1000.00  
+✅ **View Balance**: Displays balance with 2 decimal places  
+✅ **Credit Operation**: Accepts input and updates balance  
+✅ **Debit Operation**: Includes overdraft protection  
+✅ **Error Handling**: Same "Insufficient funds" message  
+✅ **Exit Behavior**: Clean shutdown with goodbye message  
+✅ **User Experience**: Same prompts and interaction flow  
+
+### Migration Benefits
+
+1. **Testability**: Automated tests ensure correctness
+2. **Maintainability**: Modern JavaScript with clear module structure
+3. **Documentation**: Extensive inline comments and external docs
+4. **Portability**: Runs on any platform with Node.js
+5. **Extensibility**: Easy to add features like persistence, APIs, etc.
 
 ## License
 
